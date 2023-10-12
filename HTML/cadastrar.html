@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="..//CSS/cadastroStyle.css">
+    <title>Casdastrar</title>
+</head>
+<body>
+    
+        <header >
+            <ul>
+                <a href="../HTML/index.html"><li id="li">Home</li></a>
+            </ul>
+        </header>
+    <div class="box">    
+        <aside class="areas">
+            <h2>Entrar</h2>
+            <form action="Entrar">
+                <label for="Nome">Nome de Usuario: </label>
+                <input type="text" name="Nome" id="name">
+            
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" id="email">
+            
+                <label for="Senha">Senha: </label>
+                <input type="password" name="Senha" id="Senha">
+                
+                <div class="botoes">
+                    <button type="reset" class="b1">Limpar</button>
+                    <button type="submit" class="b2">Cadastrar</button>
+                </div>
+            </form>
+        </aside>
+        <main class="areas">
+            <h2>Cadastrar</h2>
+            <form action="Cadastrar">
+                <label for="Nome">Nome de Usuario: </label>
+                <input type="text" name="Nome" id="nameC">
+                
+                <label for="Email">Email: </label>
+                <input type="email" name="Email" id="email">
+                
+                <label for="Senha">Senha: </label>
+                <input type="password" name="Senha" id="Senha">
+                <label for="ConfirmarSenha">Confirmar Senha: </label>
+                <input type="password" id="ConfirmarPass" name="ConfirmarSenha">
+                
+                <label for="CPF">CPF: </label>
+                <input type="text" name="CPF" id="CPF">
+    
+                <label for="Data">Data de Nascimento: </label>
+                <input type="date" name="Data" id="data">
+
+                <label for="phone">Telefone: </label>
+                <input type="tel" name="Telefone" id="phone">
+
+                <label for="cidades">Informe a sua Cidade: </label>
+                <input list="Cidades" name="Cidades">
+                <datalist id="Cidades">
+                    <option value="Sao Paulo"></option>
+                    <option value="Curitiba"></option>
+                    <option value="Campo Largo"></option>
+                    <option value="Rio de Janeiro"></option>
+                </datalist>
+
+                <div class="botoes">
+                    <button type="reset" class="b1">Limpar</button>
+                    <button type="submit" class="b2">Cadastrar</button>
+                </div>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

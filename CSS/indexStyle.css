@@ -1,0 +1,96 @@
+ul{
+    margin: 0px;
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom, #4A5C6A, #9BA8AB);
+}
+li{
+    color: white;
+    padding: 10px 10px;
+    display: inline-block;
+}
+#li:hover{
+    background-image:linear-gradient(to top, #9BA8AB, #4A5C6A);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow:  0px 0px 3px rgba(255, 255, 255, 0.5);
+    padding: 15px 11px;
+    color: #11222e
+}
+
+p{ text-align: center;}
+
+.container{
+    background-color: #9BA8AB;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-areas: 
+    'header header header'
+    'main main  sidebar'
+    'footer footer footer';
+}
+
+header{
+    grid-area: header;
+    padding: 10px #9BA8AB;
+}
+
+main{
+    text-align: center;
+    height: 100vh;
+    padding: 10px;
+    grid-area: main;
+    background-color: #4A5C6A;
+}
+aside{
+    text-align: center;
+    height: 100vh;
+    padding: 10px;
+    grid-area: sidebar;
+    background-color: #4A5C6A;
+}
+footer{
+    text-align: center;
+    grid-area: footer;
+    background-color: #4A5C6A;
+}
+input{
+    display: flex;
+    width: 500px;
+    padding: 5px;
+    border-radius: 30px;
+}
+
+.areas{
+    padding: 5px 8px;
+    background-color: #4A5C6A;
+    border: 1px solid #9BA8AB;
+}
+.item{
+ display: inline-block;
+ box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+ background-image:url(../imagens/oliboobs.jpg); 
+ border-radius: 5px;  
+ height: 150px;
+ background-position: center;
+ background-size: cover;
+ width:  calc(33.33% - 50px);
+ min-width: 100px;
+ padding: 40px 20px;
+ margin: 5px 0px;
+}
+.item:hover{
+    color: rgb(0, 0, 0);
+    border-radius: 5px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../imagens/1e539ae8.jpg);
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding: 50px 20px;
+    
+}
+
+@media(max-width: 630px){
+    .item{
+        width: calc(100% - 43px);
+    }
+}
