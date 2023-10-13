@@ -68,7 +68,8 @@ input{
 .item{
  display: inline-block;
  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
- background-image:url(../imagens/oliboobs.jpg); 
+ /* background-image: url(../imagens/ coloque a imgaem aquiImagem); */
+ background-color: purple; 
  border-radius: 5px;  
  height: 150px;
  background-position: center;
@@ -83,12 +84,21 @@ input{
     border-radius: 5px;
     background-position: center;
     background-size: cover;
-    background-image: url(../imagens/1e539ae8.jpg);
+    background-color: #9BA8AB;
+   /* background-image: url(../imagens/ coloque a imgaem aquiImagem); */
     box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.5);
     padding: 50px 20px;
     
 }
-
+.side-box{
+    color: white;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.5);
+    background-color: #11222e;
+    border: 1px solid #4A5C6A;
+    padding: 5px 5px ;
+    display: flexbox;
+    flex-direction: column;
+}
 @media(max-width: 630px){
     .item{
         width: calc(100% - 43px);
